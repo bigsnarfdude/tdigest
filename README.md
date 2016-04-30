@@ -16,6 +16,15 @@ See a blog post about it here: [Percentile and Quantile Estimation of Big Data: 
 pip install tdigest
 ```
 
+### Intended use for 30 day aggregates
+*tdigest* data structure can be stored and eventually added to other *tdigest* data structures
+For example:
+
+```
+tdigest_30_day_total = digest_day1 + digest_day2 + digest_day3 ... + digest_day30
+```
+
+
 ### Usage
 
 #### Update the digest sequentially
